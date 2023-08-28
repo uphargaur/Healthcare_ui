@@ -1,25 +1,49 @@
 # Project Name
 
-This is a brief description of your project.
+Figma UI Implementation in XML
 
 ![Progress](https://img.shields.io/badge/progress-70%25-brightgreen.svg)
 
 ## Description
 
-Provide more detailed information about your project here.
+This project involves creating an Android UI layout in XML based on a Figma design.
 
 ## Installation
 
-Explain how to install and use your project.
+To view and use the Figma UI XML code:
 
-## Usage
+1. Clone this repository to your local machine.
+2. Open the Figma design link: [Figma Design](https://www.figma.com/file/PdsuUyoE46FjnqsbTWrOgF/Assignment?node-id=0%3A1&mode=dev)
+3. Examine the design elements, including the progress bar, image button, and linear layout.
+4. Implement the design in your Android project's layout XML files.
 
-Show examples of how to use your project.
+## XML Code
 
-## Contributing
+Here's an example XML code for the described UI:
 
-Explain how others can contribute to your project.
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-## License
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:max="100"
+        android:progress="70" />
 
-This project is licensed under the [MIT License](LICENSE).
+    <!-- Image Button -->
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/your_image" />
+
+</LinearLayout>
