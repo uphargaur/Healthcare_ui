@@ -291,11 +291,11 @@
             android:textAppearance="@style/good_"
             android:textColor="#009245"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/bar1_comment"
-            app:layout_constraintHorizontal_bias="0.588"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.075"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5"
-            app:layout_constraintVertical_bias="0.092" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.321" />
 
         <TextView
             android:id="@+id/bar1_textview"
@@ -313,7 +313,7 @@
             app:layout_constraintVertical_bias="0.389" />
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/imageView32"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/white"
@@ -413,7 +413,7 @@
             app:layout_constraintVertical_bias="0.105" />
 
         <TextView
-            android:id="@+id/respiratory4"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -447,7 +447,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="top"
-            android:text="5 %"
+            android:text="65 %"
             android:textAppearance="@style/good_"
             android:textColor="#FFC412"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -489,6 +489,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:id="@+id/constraintLayout2"
         app:layout_constraintTop_toBottomOf="@id/constraintLayout1"
         app:layout_constraintBottom_toTopOf="@id/constraintLayout3"
         app:layout_constraintStart_toStartOf="parent"
@@ -496,7 +497,42 @@
         android:layout_height="200dp">
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/vector_481"
+            android:layout_width="112dp"
+            android:layout_height="2dp"
+            android:background="@drawable/vector_line"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.086"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.287" />
+
+        <ImageView
+            android:id="@+id/vector_482"
+            android:layout_width="112dp"
+            android:layout_height="2dp"
+            android:background="@drawable/vector_line"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.846"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.287" />
+
+        <TextView
+            android:id="@+id/constraintLayout2_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="156dp"
+            android:text="LIFESTYLE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.276" />
+
+        <ImageView
+            android:id="@+id/imageView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/white"
@@ -509,7 +545,7 @@
             app:layout_constraintVertical_bias="0.508" />
 
         <TextView
-            android:id="@+id/respiratory"
+            android:id="@+id/respiratory4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -523,7 +559,7 @@
             app:layout_constraintVertical_bias="0.526" />
 
         <TextView
-            android:id="@+id/good_bar3"
+            android:id="@+id/good_bar4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="top"
@@ -538,7 +574,7 @@
             app:layout_constraintVertical_bias="0.688" />
 
         <TextView
-            android:id="@+id/bar1_percentage"
+            android:id="@+id/bar3_percentage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="top"
@@ -553,7 +589,7 @@
             app:layout_constraintVertical_bias="0.688" />
 
         <TextView
-            android:id="@+id/bar2_textview"
+            android:id="@+id/bar4_textview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="top"
@@ -566,6 +602,108 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.806" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar4"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="35dp"
+            android:layout_height="5dp"
+            android:max="100"
+            android:progress="80"
+            android:progressDrawable="@drawable/custom_progress_bar_green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.789" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:src="@drawable/running_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.669"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.542" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="312dp"
+            android:text=" Nutrition \n Score"
+            android:textAppearance="@style/respiratory"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.526" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:text="Good!"
+            android:textAppearance="@style/good_"
+            android:textColor="@android:color/holo_red_dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.885"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.752" />
+
+        <TextView
+            android:id="@+id/bar4_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:text="59 %"
+            android:textAppearance="@style/good_"
+            android:textColor="@android:color/holo_red_dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.664"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.752" />
+
+        <TextView
+            android:id="@+id/bar5_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="-2sp"
+            android:text=" Everything \n looks good!"
+            android:textAppearance="@style/everything_"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.949"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.875" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar5"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="35dp"
+            android:layout_height="5dp"
+            android:max="100"
+            android:progress="80"
+            android:progressDrawable="@drawable/custom_progress_bar_green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.659"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.825" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -595,7 +733,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.62">
-
 
             <ImageView
                 android:id="@+id/imageView"
@@ -651,7 +788,7 @@
             app:layout_constraintVertical_bias="0.115" />
 
         <ProgressBar
-            android:id="@+id/progress_bar3"
+            android:id="@+id/progress_bar6"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="119dp"
             android:layout_height="17dp"
@@ -679,7 +816,7 @@
             app:layout_constraintVertical_bias="0.408" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textView3_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="156dp"
@@ -708,6 +845,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/white"
+            android:id="@+id/forwardbutton"
             android:src="@drawable/forwardbutton"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
